@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "test-flasky"
+version = "0.1.0"
+description = ""
+authors = ["Alexey Vershkov <slipgoat@gmail.com>"]
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(levelname)s - %(filename)s - %(asctime)s: %(message)s"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.1.2"
+requests = "^2.28.1"
+pydantic = "^1.9.2"
+names = "^0.3.0"
+assertpy = "^1.1"
+pytest-xdist = "^2.5.0"
+allure-pytest = "^2.9.45"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
